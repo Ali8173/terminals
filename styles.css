@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+  *,
+  *::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 2.5em 1.5em;
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .7rem
+  }
+
+  section {
+    margin-inline: auto;
+  }
+
+  .section {
+    background-color: hsl(263, 55%, 52%);
+    padding: 2em 1.5em;
+    border-radius: .5rem;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    z-index: 99;
+    font-size: 0.8125rem;
+  }
+
+  .section__P {
+    color: white;
+    line-height: 1.5em;
+    font-size: 0.8125rem;
+    margin-bottom: .6em;
+    margin-top: 3.3em;
+    font-weight: 600;
+  }
+
+  .section__article {
+    position: absolute;
+    color: white;
+    left: 5em;
+  }
+
+  .verified__graduate {
+    opacity: 50%;
+  }
+
+  .section__img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: .1rem;
+    left: -2.6rem;
+    border: .11rem solid hsl(0, 0%, 81%);
+  }
+
+  svg {
+    position: absolute;
+    opacity: 70%;
+    right: 2.5rem;
+    top: 0;
+    z-index: -1;
+  }
+
+  .section__p2 {
+    font-weight: 500;
+    color: hsl(0, 0%, 81%);
+    font-size: 0.8125em;
+  }
+
+  .section__2 {
+    background-color: hsl(217, 19%, 35%);
+    width:100%;
+  }
+
+  .section__3 {
+    background-color: white;
+    width:100%;
+  }
+
+  .white {
+    color: hsl(219, 29%, 14%);
+  }
+
+  .section__4 {
+    background-color: hsl(219, 29%, 14%);
+  }
+
+  .section__5 {
+    background-color: white;
+  }
+
+  @media only screen and (min-width:60em){
+
+    main{
+      max-width: 80vw;
+      padding-block: 3em;
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap:1.5em;
+    }
+
+    .section__1{
+      grid-column: 1 / 7;
+    }
+    .section__2{
+      grid-column:7 / 10;
+    }
+
+    .section__3{
+      grid-column: 1 / 4;
+    }
+
+    .section__4{
+      grid-column:4 / 10;
+    }
+
+    .section__5{
+      grid-column:10 / 13;
+      grid-row:1 / 3;
+    }
+  }
